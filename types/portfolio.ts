@@ -109,6 +109,7 @@ export interface Education {
   gpa?: string;
   honors?: string[];
   relevantCoursework: string[];
+  websiteUrl?: string;
 }
 
 export interface Achievement {

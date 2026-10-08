@@ -1,7 +1,7 @@
 import React from "react";
 import { educationList } from "@/data/education";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { GraduationCap, Award, Calendar, MapPin } from "lucide-react";
+import { GraduationCap, Award, Calendar, MapPin, ExternalLink } from "lucide-react";
 
 export function EducationSection() {
   return (
@@ -22,10 +22,23 @@ export function EducationSection() {
               <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-3 mb-5">
                 <div>
                   <div className="flex items-center gap-2 mb-1">
-                    <GraduationCap className="w-5 h-5 text-indigo-500" />
-                    <h3 className="text-lg sm:text-xl font-bold text-slate-900 dark:text-white">
-                      {edu.institution}
-                    </h3>
+                    <GraduationCap className="w-5 h-5 text-indigo-500 shrink-0" />
+                    {edu.websiteUrl ? (
+                      <a
+                        href={edu.websiteUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group/link inline-flex items-center gap-1.5 text-lg sm:text-xl font-bold text-slate-900 dark:text-white hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
+                        title="Visit official website"
+                      >
+                        <span>{edu.institution}</span>
+                        <ExternalLink className="w-4 h-4 text-slate-400 group-hover/link:text-indigo-500 transition-colors" />
+                      </a>
+                    ) : (
+                      <h3 className="text-lg sm:text-xl font-bold text-slate-900 dark:text-white">
+                        {edu.institution}
+                      </h3>
+                    )}
                   </div>
                   <div className="text-sm font-semibold text-indigo-600 dark:text-indigo-400">
                     {edu.degree}

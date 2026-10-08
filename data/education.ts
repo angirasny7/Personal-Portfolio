@@ -12,7 +12,8 @@ export const educationList: Education[] = [
       "Founder Scholarship, SRMIST — 100% scholarship for securing Rank 10 in SRMJEEE",
       "Rank 10 in SRMJEEE"
     ],
-    relevantCoursework: []
+    relevantCoursework: [],
+    websiteUrl: "https://www.srmist.edu.in/"
   },
   {
     institution: "VidyaGyan School",
