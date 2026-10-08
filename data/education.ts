@@ -16,7 +16,7 @@ export const educationList: Education[] = [
     websiteUrl: "https://www.srmist.edu.in/"
   },
   {
-    institution: "VidyaGyan School",
+    institution: "VidyaGyan School, Sitapur",
     degree: "Class 6–12 • Secondary & Higher Secondary Education",
     fieldOfStudy: "",
     location: "India",
@@ -25,6 +25,6 @@ export const educationList: Education[] = [
       "Shiv Nadar Foundation Scholarship — Full scholarship for academic excellence from Class VI - XII"
     ],
     relevantCoursework: [],
-    websiteUrl: "https://vidyagyan.in/"
+    websiteUrl: "https://vidyagyan.in/campus/Sitapur"
   }
 ];
