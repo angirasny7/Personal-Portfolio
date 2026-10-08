@@ -24,6 +24,7 @@ export const educationList: Education[] = [
     honors: [
       "Shiv Nadar Foundation Scholarship — Full scholarship for academic excellence from Class VI - XII"
     ],
-    relevantCoursework: []
+    relevantCoursework: [],
+    websiteUrl: "https://vidyagyan.in/"
   }
 ];
